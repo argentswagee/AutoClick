@@ -1,0 +1,28 @@
+body {
+    animation-duration: 5s;
+    animation-name: grad;
+    background: linear-gradient(to left, rgb(119, 3, 142),rgb(246, 150, 150) );
+    animation: linear infinite;
+}
+
+@keyframes grad {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.image {
+    border-radius: 7.5%;
+    margin-top: 13%;
+    margin-left: 30%;
+}
+
+.image:hover {
+    cursor: pointer;
+}
