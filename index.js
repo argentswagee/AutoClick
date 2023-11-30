@@ -1,7 +1,7 @@
 var fld = document.getElementById('fldroite');
 
 fld.addEventListener('click', function(){
-document.getElementById('f3').style.backgroundColor = '#D4C685';
+document.getElementById('f3').style.backgroundColor = ' #4f6d7acb';
 document.getElementById('f2').style.backgroundColor = '#ff7029c5';
 document.getElementById('f1').style.backgroundColor = '#ffc0a0c7';
 document.getElementById('body1').style.backgroundColor = '#A7D3A6';
