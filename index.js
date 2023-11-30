@@ -1,33 +1,11 @@
-var c = document.getElementById('clickspace');
-var score = 0;
-var conf;
-document.addEventListener('keydown', function(event) {
-    if (event.code === 'Space') {
+var fld = document.getElementById('fldroite');
 
-        c.addEventListener('click', function() {
-            score += 1;
-            })
-            setTimeout(function(){
-                if (score < 5) {
-                    conf = confirm("Votre score est de : " + score + ", vous êtes classer 'Vins'");
-                    
-                    if (conf) {
-                      location.reload();
-                } else if (score > 5 && score < 10) {
-                    conf = confirm("Votre score est de : " + score + ", vous êtes classer 'BABABOUILLE'");
-                    
-                    if (conf) {
-                      location.reload();
-                    }
-                } else {
-                    conf = confirm("Votre score est de : " + score + ", vous êtes classer 'Enorme et sec'");
-                    
-                    if (conf) {
-                      location.reload();
-                    }
-                }
-                location.reload();
-              }
-            }, 1000)
-    }
+fld.addEventListener('click', function(){
+document.getElementById('f3').style.backgroundColor = '#D4C685';
+document.getElementById('f2').style.backgroundColor = '#ff7029c5';
+document.getElementById('f1').style.backgroundColor = '#ffc0a0c7';
+document.getElementById('body1').style.backgroundColor = '#A7D3A6';
+document.getElementById('pr').style.backgroundColor = '#386C0B';
+document.getElementById('pr1').style.backgroundColor = '#55a70d';
+document.getElementById('pr2').style.backgroundColor = '#55a70d';
 })
