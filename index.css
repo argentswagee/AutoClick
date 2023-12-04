@@ -202,6 +202,10 @@
     filter: brightness(0.5);
 }
 
+.fl1:active {
+    filter: brightness(0.5);
+}
+
 .body2 {
     background-color: #FFBFA0;
     z-index: 1;
